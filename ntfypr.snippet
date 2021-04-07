@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CodeSnippets  xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Notify Property</Title>
+			<Shortcut>ntfypr</Shortcut>
+			<Description>Code snippet Notify Property statement</Description>
+			<Author>deathCodeDevelop</Author>
+			<SnippetTypes>
+				<SnippetType>Expansion</SnippetType>
+			</SnippetTypes>
+		</Header>
+		<Snippet>
+			<Declarations>
+				<Literal>
+					<ID>expression</ID>
+					<ToolTip>Expression to evaluate</ToolTip>
+				</Literal>
+			</Declarations>
+			<Code Language="csharp"><![CDATA[public object Property
+		{
+			get => field;
+			set 
+			{
+				field = value;
+				OnPropertyChanged();
+			}
+		}]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
